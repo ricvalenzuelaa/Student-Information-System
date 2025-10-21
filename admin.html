@@ -11,23 +11,18 @@
                     margin: 0;
           }
 
-          .RegisterCreate {
-                    width: 500px;
-                    margin: 50px auto;
-                    padding: 20px;
-                    background-color: rgb(173, 216, 230);
-                    border-radius: 5px;
-
-          }
-
-          .RegisterCreate h1 {
-                    text-align: left;
-                    font-family: arial;
-                    margin-bottom: 20px;
-          }
-
-          .RegisterCreate p {
+          .Login {
+                    background: rgb(173, 216, 230);
+                    color: white;
+                    padding: 40px;
+                    border-radius: 12px;
                     text-align: center;
+                    width: 320px;
+          }
+
+          .Login h2 {
+                    font-size: 22px;
+                    margin-bottom: 10px;
           }
 
           label {
@@ -35,12 +30,10 @@
                     margin-bottom: 10px;
           }
 
-          input[type="text"],
-          input[type="username"],
-          input[type="password"] {
+          input[type="text"] {
                     margin-bottom: 10px;
-                    width: 95%;
-                    padding: 10px;
+                    width: 90%;
+                    padding: 9px;
                     border: 1px solid #d4d4d4;
                     border-radius: 3px;
                     background-color: white;
@@ -70,6 +63,8 @@
                     margin: 5px 0;
           }
 
+
+
           button:hover {
                     background-color: #7accff;
                     transform: scale(1.05);
@@ -79,32 +74,24 @@
 <head>
           <meta charset="UTF-8">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <link rel="stylesheet" href="regis.css">
 </head>
 
 <body>
-          <div class="RegisterCreate">
-                    <h2>Create your account</h2>
-
-
+          <div class="Login">
+                    <h2>Admin Login Portal</h2>
                     <form onsubmit="return validateform()" method="post" action="login.php">
-                              <label type="Firstname">Firstname</label>
-                              <input type="text" id="Firstname" required>
-                              <label type="Lastname">Lastname</label>
-                              <input type="text" id="Lastname" required>
-                              <label type="City">City</label>
-                              <input type="text" id="City" required>
-                              <label type="Username">Username</label>
-                              <input type="username" id="Username" required>
-                              <label type="Password">Password</label>
-                              <input type="Password" id="Password" required>
+                              <label>Username</label>
+                              <input type="text" id="Username" required />
+                              <label>Password</label>
+                              <input type="text" id="Password" required />
 
                               <div class="btndiv">
                                         <button class="btn" type="submit">Submit</button>
                               </div>
-                              <p>By registering you agree to our terms.</p>
+
+                              <a href="RegisterCreate.html">sign up</a>
                     </form>
-          </div>
+
 </body>
 
 </html>
